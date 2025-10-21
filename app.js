@@ -15,7 +15,7 @@ btn.addEventListener("click", ()=>{
     if (trimmedname1 === "" || trimmedname2 === "") {
         newE.textContent = "";
         alert("Make sure you have entered both names");
-    }else if (isNaN(name1) || isNaN(name2)) {
+    }else if (!isNaN(name1) || !isNaN(name2)) {
         newE.textContent = "";
         alert("Please enter text only");
     }
